@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowlessControlsTutorial", "WindowlessControlsTutorial\WindowlessControlsTutorial.csproj", "{6735C3C0-39A9-408B-A992-89ECDFE6A06D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowlessControls", "WindowlessControls\WindowlessControls.csproj", "{A429DD8A-6C61-4CF3-972E-25CA67BEDF31}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://koushik-tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WindowlessControlsTutorial\\WindowlessControlsTutorial.csproj
+		SccProjectName1 = WindowlessControlsTutorial
+		SccLocalPath1 = WindowlessControlsTutorial
+		SccProjectUniqueName2 = WindowlessControls\\WindowlessControls.csproj
+		SccProjectName2 = WindowlessControls
+		SccLocalPath2 = WindowlessControls
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		TFSBuild|Any CPU = TFSBuild|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6735C3C0-39A9-408B-A992-89ECDFE6A06D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6735C3C0-39A9-408B-A992-89ECDFE6A06D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6735C3C0-39A9-408B-A992-89ECDFE6A06D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6735C3C0-39A9-408B-A992-89ECDFE6A06D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6735C3C0-39A9-408B-A992-89ECDFE6A06D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6735C3C0-39A9-408B-A992-89ECDFE6A06D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6735C3C0-39A9-408B-A992-89ECDFE6A06D}.TFSBuild|Any CPU.ActiveCfg = Release|Any CPU
+		{6735C3C0-39A9-408B-A992-89ECDFE6A06D}.TFSBuild|Any CPU.Build.0 = Release|Any CPU
+		{6735C3C0-39A9-408B-A992-89ECDFE6A06D}.TFSBuild|Any CPU.Deploy.0 = Release|Any CPU
+		{A429DD8A-6C61-4CF3-972E-25CA67BEDF31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A429DD8A-6C61-4CF3-972E-25CA67BEDF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A429DD8A-6C61-4CF3-972E-25CA67BEDF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A429DD8A-6C61-4CF3-972E-25CA67BEDF31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A429DD8A-6C61-4CF3-972E-25CA67BEDF31}.TFSBuild|Any CPU.ActiveCfg = TFSBuild|Any CPU
+		{A429DD8A-6C61-4CF3-972E-25CA67BEDF31}.TFSBuild|Any CPU.Build.0 = TFSBuild|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

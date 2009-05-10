@@ -1,0 +1,160 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6735C3C0-39A9-408B-A992-89ECDFE6A06D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowlessControlsTutorial</RootNamespace>
+    <AssemblyName>WindowlessControlsTutorial</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <DeployDirSuffix>WindowlessControlsTutorial</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsMobile.PocketOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlphaDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlphaDemo.Designer.cs">
+      <DependentUpon>AlphaDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ButtonDemo.Designer.cs">
+      <DependentUpon>ButtonDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactList.Designer.cs">
+      <DependentUpon>ContactList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelloWorld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelloWorld.Designer.cs">
+      <DependentUpon>HelloWorld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageGallery.Designer.cs">
+      <DependentUpon>ImageGallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="HelloWorld.resx">
+      <DependentUpon>HelloWorld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageGallery.resx">
+      <DependentUpon>ImageGallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorialList.resx">
+      <DependentUpon>TutorialList.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="TutorialList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorialList.Designer.cs">
+      <DependentUpon>TutorialList.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WindowlessControls\WindowlessControls.csproj">
+      <Project>{A429DD8A-6C61-4CF3-972E-25CA67BEDF31}</Project>
+      <Name>WindowlessControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlphaDemo.resx">
+      <DependentUpon>AlphaDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mybrainhurts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Btn1.png" />
+    <EmbeddedResource Include="Btn1_Disabled.png" />
+    <EmbeddedResource Include="Btn1_Pushed.png" />
+    <EmbeddedResource Include="ButtonDemo.resx">
+      <DependentUpon>ButtonDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactList.resx">
+      <DependentUpon>ContactList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tip.png" />
+    <EmbeddedResource Include="users.png" />
+    <EmbeddedResource Include="Wallpaper.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

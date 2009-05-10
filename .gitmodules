@@ -1,0 +1,3 @@
+[submodule "WindowlessControls"]
+	path = WindowlessControls
+	url = git@github.com:koush/WindowlessControls.git
